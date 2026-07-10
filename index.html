@@ -45,10 +45,14 @@
     };
   </script>
   <style>
+    html,body{overflow-x:clip;}
     body { background-color: #FDF9F9; }
     .grad-bordeaux { background: linear-gradient(120deg,#1E100F 0%,#4D0C12 48%,#6b0d18 100%); }
     .grad-strip { background: linear-gradient(120deg,#1E100F 0%,#4D0C12 100%); }
     .lead-accordion{max-height:0;overflow:hidden;transition:max-height .5s ease;}
+    .ba-track{display:flex;transition:transform .5s ease;}
+    .ba-slide{flex:0 0 100%;}
+    @media(min-width:768px){.ba-slide{flex:0 0 33.3333%;}}
     .lead-accordion.open{max-height:2600px;}
   </style>
   <!-- Meta Pixel Code -->
@@ -67,6 +71,8 @@
   <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1567955260162409&ev=PageView&noscript=1"/></noscript>
   <!-- End Meta Pixel Code -->
+  <script src="//pixel.convertize.io/11734.js"></script>
+  <script src="https://t.contentsquare.net/uxa/458ce3eeac9fa.js" defer></script>
 </head>
 <body class="font-sans text-darkmaroon antialiased">
 
@@ -89,7 +95,7 @@
         <!-- copy -->
         <div class="lg:col-span-7">
           <span class="inline-block text-[10px] tracking-[0.3em] font-semibold text-white/70 border border-white/30 rounded-full px-4 py-1.5 mb-8">
-            ITALIAN MEDICAL &amp; TECHNOLOGICAL EXCELLENCE
+            PARTNER OFFER — APPLICATIONS CLOSE JULY 17, 2026
           </span>
           <h1 class="font-serif font-bold leading-[1.04] text-[40px] md:text-[54px]">
             Your clients are already asking for infrared. Do you have the answer?
@@ -121,7 +127,13 @@
         <div class="lg:col-span-5">
           <figure class="relative mx-auto max-w-[340px] lg:max-w-none">
             <div class="rounded-2xl border border-white/15 bg-white/5 p-3 shadow-2xl backdrop-blur-sm">
-              <img src="assets/infrabaldan_device.jpeg" alt="The Infrabaldan device" class="w-full rounded-xl object-cover" />
+              <div class="rounded-xl overflow-hidden">
+                <img src="assets/infrabaldan_device.jpeg" alt="The Infrabaldan device" class="w-full object-cover" />
+                <div class="bg-white px-4 py-3 flex items-center gap-3">
+                  <img src="assets/realself-logo.png" alt="RealSelf" class="h-4 w-auto shrink-0" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-bold text-darkmaroon text-[13px] tracking-tight',textContent:'REALSELF'}))" />
+                  <span class="text-[10px] leading-snug text-darkmaroon/80">Baldan Technologies are the most requested in U.S. aesthetics, according to RealSelf.</span>
+                </div>
+              </div>
             </div>
             <figcaption class="mt-4 text-center text-[11px] tracking-[0.25em] font-semibold text-white/55">
               THE INFRABALDAN PLATFORM
@@ -132,17 +144,96 @@
     </div>
   </section>
 
-  <!-- ===================== SOCIAL PROOF (REALSELF STRIP) ===================== -->
-  <section class="bg-white border-y border-black/10">
-    <div class="max-w-[1180px] mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-2 text-center">
-      <p class="font-serif text-[15px] md:text-[17px] text-darkmaroon">Baldan is one of the most requested aesthetic technologies in the United States.</p>
-      <span class="hidden sm:block h-6 w-px bg-black/15"></span>
-      <div class="flex items-center gap-2 text-[13px] text-darkmaroon/60">
-        <span>according to</span>
-        <img src="assets/realself-logo.png" alt="RealSelf" class="h-5 w-auto" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-bold text-darkmaroon text-[18px] tracking-tight',textContent:'RealSelf'}))" />
+  <!-- ===================== WHAT IS INFRABALDAN ===================== -->
+  <section class="bg-white border-b border-black/10">
+    <div class="max-w-[1180px] mx-auto px-6 py-14">
+      <div class="max-w-[760px]">
+        <div class="text-[10px] tracking-[0.3em] font-semibold text-bordeaux">WHAT IS INFRABALDAN</div>
+        <h2 class="font-serif font-bold text-[28px] md:text-[36px] text-darkmaroon mt-3 leading-snug">The patented system that reactivates aerobic metabolism.</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-7 mt-10">
+        <div class="border-l-2 border-bordeaux/30 pl-5">
+          <div class="text-[14px] font-bold text-darkmaroon">Measures first</div>
+          <p class="text-[13px] text-darkmaroon/75 mt-2.5 leading-relaxed">The check-up scale reads weight, fat and lean mass, water percentage and basal metabolism in seconds — and Infrabaldan builds a tailor-made program for each client.</p>
+        </div>
+        <div class="border-l-2 border-bordeaux/30 pl-5">
+          <div class="text-[14px] font-bold text-darkmaroon">A 40-minute session clients enjoy</div>
+          <p class="text-[13px] text-darkmaroon/75 mt-2.5 leading-relaxed">Guided bike movement under selected infrared, with breathing guidance and entertainment on the big screen — a session lasts as long as an episode of their favorite series.</p>
+        </div>
+        <div class="border-l-2 border-bordeaux/30 pl-5">
+          <div class="text-[14px] font-bold text-darkmaroon">Targeted where it matters</div>
+          <p class="text-[13px] text-darkmaroon/75 mt-2.5 leading-relaxed">The operator adjusts lamp power for each body area — slim where needed — for progressive, natural, lasting body sculpting and toning.</p>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- ===================== VIDEO (YOUTUBE) ===================== -->
+  <section class="bg-cream">
+    <div class="max-w-[1180px] mx-auto px-6 pt-14">
+      <div class="text-center">
+        <div class="text-[10px] tracking-[0.3em] font-semibold text-bordeaux">SEE IT IN ACTION</div>
+        <h2 class="font-serif font-bold text-[28px] md:text-[36px] text-darkmaroon mt-3">Infrabaldan, in 90 seconds.</h2>
+      </div>
+      <div class="mt-8 max-w-[920px] mx-auto">
+        <iframe class="w-full aspect-video rounded-xl shadow-2xl" src="https://www.youtube-nocookie.com/embed/KCQ40_C_Diw" title="Infrabaldan — official video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BEFORE / AFTER CAROUSEL ===================== -->
+  <section class="bg-cream">
+    <div class="max-w-[1180px] mx-auto px-6 py-14">
+      <div class="text-center mb-9">
+        <div class="text-[10px] tracking-[0.3em] font-semibold text-bordeaux">REAL RESULTS</div>
+        <h2 class="font-serif font-bold text-[30px] md:text-[38px] text-darkmaroon mt-3">The results your clients will ask for.</h2>
+      </div>
+      <div class="relative">
+        <div class="overflow-hidden rounded-xl">
+          <div id="baTrack" class="ba-track">
+            <div class="ba-slide px-1.5"><img src="assets/ba-1.jpg" alt="Infrabaldan before and after — back" class="w-full rounded-lg object-cover" loading="lazy" /></div>
+            <div class="ba-slide px-1.5"><img src="assets/ba-2.jpg" alt="Infrabaldan before and after — front" class="w-full rounded-lg object-cover" loading="lazy" /></div>
+            <div class="ba-slide px-1.5"><img src="assets/ba-3.jpg" alt="Infrabaldan before and after — profile" class="w-full rounded-lg object-cover" loading="lazy" /></div>
+            <div class="ba-slide px-1.5"><img src="assets/ba-4.jpg" alt="Infrabaldan before and after — side" class="w-full rounded-lg object-cover" loading="lazy" /></div>
+          </div>
+        </div>
+        <button type="button" id="baPrev" aria-label="Previous" class="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-md text-bordeaux font-bold hover:bg-white/90 transition">&#8249;</button>
+        <button type="button" id="baNext" aria-label="Next" class="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-md text-bordeaux font-bold hover:bg-white/90 transition">&#8250;</button>
+      </div>
+      <div id="baDots" class="flex justify-center gap-2 mt-6"></div>
+      <p class="text-center text-[11px] text-darkmaroon/55 mt-5">Unretouched client photos. Individual results may vary.</p>
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      const track = document.getElementById("baTrack");
+      const slides = track.children.length;
+      const dotsBox = document.getElementById("baDots");
+      let per = window.matchMedia("(min-width:768px)").matches ? 3 : 1;
+      let pages = Math.ceil(slides / per), page = 0, timer;
+      function buildDots(){
+        dotsBox.innerHTML = "";
+        for (let i=0;i<pages;i++){
+          const d=document.createElement("button");
+          d.type="button"; d.setAttribute("aria-label","Go to slide "+(i+1));
+          d.className="w-2.5 h-2.5 rounded-full transition " + (i===page?"bg-bordeaux":"bg-bordeaux/25");
+          d.addEventListener("click",()=>{page=i;update();restart();});
+          dotsBox.appendChild(d);
+        }
+      }
+      function update(){
+        track.style.transform = "translateX(-" + (page*100) + "%)";
+        Array.prototype.forEach.call(dotsBox.children,(d,i)=>{ d.className="w-2.5 h-2.5 rounded-full transition " + (i===page?"bg-bordeaux":"bg-bordeaux/25"); });
+      }
+      function step(dir){ page=(page+dir+pages)%pages; update(); }
+      function restart(){ clearInterval(timer); timer=setInterval(()=>step(1),5000); }
+      document.getElementById("baPrev").addEventListener("click",()=>{step(-1);restart();});
+      document.getElementById("baNext").addEventListener("click",()=>{step(1);restart();});
+      window.addEventListener("resize",()=>{ const np=window.matchMedia("(min-width:768px)").matches?3:1; if(np!==per){per=np;pages=Math.ceil(slides/per);page=Math.min(page,pages-1);buildDots();update();} });
+      buildDots(); update(); restart();
+    })();
+  </script>
 
   <!-- ===================== HERO FORM (ACCORDION, CLOSED BY DEFAULT) ===================== -->
   <section class="bg-graybg">
@@ -162,7 +253,7 @@
         <input type="tel" name="phone" required placeholder="Phone Number *" autocomplete="tel" class="w-full bg-white text-[13px] text-gray-700 px-3.5 py-3 outline-none rounded-sm border border-black/10 placeholder:text-gray-400 focus:border-bordeaux" />
         <input type="text" name="businessName" required placeholder="Business Name *" autocomplete="organization" class="w-full bg-white text-[13px] text-gray-700 px-3.5 py-3 outline-none rounded-sm border border-black/10 placeholder:text-gray-400 focus:border-bordeaux" />
         <input type="text" name="businessState" required placeholder="Business State *" autocomplete="address-level1" class="w-full bg-white text-[13px] text-gray-700 px-3.5 py-3 outline-none rounded-sm border border-black/10 placeholder:text-gray-400 focus:border-bordeaux" />
-        <input type="text" name="website" required placeholder="Website or Social Media (or 'none') *" autocomplete="url" class="w-full bg-white text-[13px] text-gray-700 px-3.5 py-3 outline-none rounded-sm border border-black/10 placeholder:text-gray-400 focus:border-bordeaux" />
+        <input type="text" name="website" placeholder="Website or Social Media (optional)" class="w-full bg-white text-[13px] text-gray-700 px-3.5 py-3 outline-none rounded-sm border border-black/10 placeholder:text-gray-400 focus:border-bordeaux" />
 
         <div class="pt-2 flex items-start gap-2.5">
           <input type="checkbox" name="termsAccepted" value="Yes" required class="mt-1 accent-bordeaux shrink-0" />
@@ -189,9 +280,9 @@
   <section class="bg-darkmaroon text-white">
     <div class="max-w-[1180px] mx-auto px-6 py-14">
       <div class="mb-9 flex items-center gap-4 text-white">
-        <span class="text-[11px] tracking-[0.28em] font-bold text-white/60 whitespace-nowrap">LIMITED-TIME PARTNER OFFER</span>
+        <span class="text-[11px] tracking-[0.28em] font-bold text-white/60">LIMITED-TIME PARTNER OFFER</span>
         <span class="h-px flex-1 bg-white/15"></span>
-        <span class="text-[12px] font-semibold whitespace-nowrap">Applications close July 17, 2026</span>
+        <span class="text-[12px] font-semibold">Applications close July 17, 2026</span>
       </div>
       <div class="max-w-[760px] mb-10">
         <p class="font-serif font-bold text-[22px] md:text-[26px] leading-snug">
@@ -233,7 +324,7 @@
           REQUEST A CALL BACK
         </a>
       </div>
-      <p class="mt-5 text-[12px] text-white/55">FDA-cleared technology · No Medical Director required · We partner with a limited number of clinics per area.</p>
+      <p class="mt-5 text-[12px] text-white/55">Professional aesthetic technology · No Medical Director required · We partner with a limited number of clinics per area.</p>
     </div>
   </section>
 
@@ -339,71 +430,35 @@
     </div>
   </section>
 
-  <!-- ===================== AURA — AI MARKETING AGENT ===================== -->
-  <section class="bg-cream">
-    <div class="max-w-[1180px] mx-auto px-6 py-20">
-      <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+  <!-- ===================== AURA (AGENCY COST WIPED OUT) ===================== -->
+  <section id="aura" class="grad-strip text-white">
+    <div class="max-w-[1180px] mx-auto px-6 py-16">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
         <div class="lg:col-span-7">
-          <span class="text-[11px] tracking-[0.25em] font-bold text-bordeaux">POWERED BY AURA</span>
-          <h2 class="font-serif font-bold text-[32px] md:text-[40px] leading-[1.12] mt-4 text-darkmaroon">
-            Meet Aura — the AI agent that brings you new clients.
-          </h2>
-          <p class="mt-6 text-[16px] leading-relaxed text-darkmaroon/90 max-w-[620px]">
-            Aura is Baldan's proprietary AI marketing agent. It creates, launches and automates your
-            marketing campaigns from end to end — the work you'd otherwise pay an agency thousands for
-            every month — and turns that into new clients booked straight into your clinic.
-          </p>
-          <p class="mt-4 text-[15px] font-bold text-darkmaroon">Included for new partners, at no extra cost.</p>
-
-          <div class="mt-8 grid sm:grid-cols-2 gap-x-8 gap-y-5 max-w-[600px]">
-            <div class="flex items-start gap-3">
-              <span class="text-bordeaux font-bold leading-6">—</span>
-              <div>
-                <div class="text-[14px] font-semibold text-darkmaroon">Campaigns built for you</div>
-                <div class="text-[12px] text-darkmaroon/70 leading-relaxed">Aura's AI writes, designs and sets up your ad campaigns.</div>
-              </div>
-            </div>
-            <div class="flex items-start gap-3">
-              <span class="text-bordeaux font-bold leading-6">—</span>
-              <div>
-                <div class="text-[14px] font-semibold text-darkmaroon">Fully automated</div>
-                <div class="text-[12px] text-darkmaroon/70 leading-relaxed">It launches, targets and optimizes on its own, 24/7.</div>
-              </div>
-            </div>
-            <div class="flex items-start gap-3">
-              <span class="text-bordeaux font-bold leading-6">—</span>
-              <div>
-                <div class="text-[14px] font-semibold text-darkmaroon">New clients, not just clicks</div>
-                <div class="text-[12px] text-darkmaroon/70 leading-relaxed">Turns ad spend into booked consultations.</div>
-              </div>
-            </div>
-            <div class="flex items-start gap-3">
-              <span class="text-bordeaux font-bold leading-6">—</span>
-              <div>
-                <div class="text-[14px] font-semibold text-darkmaroon">Replaces your agency</div>
-                <div class="text-[12px] text-darkmaroon/70 leading-relaxed">The marketing work, handled in-house at no extra cost.</div>
-              </div>
-            </div>
+          <div class="text-[10px] tracking-[0.3em] font-semibold text-white/55">YOUR MARKETING, HANDLED</div>
+          <div class="mt-5 flex flex-wrap items-baseline gap-x-4 gap-y-2">
+            <span class="font-serif font-bold text-[46px] md:text-[60px] leading-none line-through decoration-[5px] decoration-white/90 text-white/55">$70,000/year</span>
           </div>
-
-          <div class="mt-10">
-            <a href="#form" class="inline-block bg-bordeaux text-white px-8 py-4 text-[12px] font-bold tracking-wide hover:opacity-90 transition">
+          <div class="mt-2 text-[13px] md:text-[15px] text-white/80">the average cost of a U.S. marketing agency*</div>
+          <h2 class="font-serif font-bold text-[26px] md:text-[34px] mt-6 leading-snug">Wiped out by AURA — your new marketing agency, included for 12 months.</h2>
+          <p class="mt-5 text-[15px] leading-relaxed text-white/85 max-w-[600px]">
+            Aura is an AI-empowered platform that brings you new clients automatically: it creates and runs your ad
+            campaigns on Meta — Facebook and Instagram — and optimizes them on its own, while you do what you do best.
+          </p>
+          <div class="mt-5 flex items-center gap-2.5 text-[13px] text-white/70">
+            <span>Campaigns run on</span>
+            <img src="assets/meta-logo.png" alt="Meta" class="h-5 w-auto" style="filter:brightness(0) invert(1);" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-bold text-white text-[16px]',textContent:'Meta'}))" />
+          </div>
+          <div class="mt-8">
+            <a href="#form" class="inline-block bg-white text-bordeaux px-8 py-4 text-[12px] font-bold tracking-wide hover:bg-white/90 transition">
               SEE WHAT AURA CAN DO FOR YOU
             </a>
           </div>
+          <p class="mt-5 text-[10px] text-white/40">*Industry estimate. Ad budget excluded. Terms and conditions apply.</p>
         </div>
-
-        <div class="lg:col-span-5 flex justify-center">
-          <div class="relative w-[260px] h-[528px] rounded-[2.75rem] bg-black p-2.5 shadow-2xl">
-            <div class="relative w-full h-full rounded-[2.25rem] overflow-hidden">
-              <img src="assets/aura.jpg" alt="Aura, Baldan's AI marketing agent" class="w-full h-full object-cover object-top" />
-              <div class="absolute top-2.5 left-1/2 -translate-x-1/2 w-24 h-5 bg-black rounded-full"></div>
-              <div class="absolute bottom-0 inset-x-0 p-5 bg-gradient-to-t from-black/85 via-black/40 to-transparent">
-                <div class="font-serif text-white text-[22px] tracking-[0.18em]">AURA</div>
-                <div class="text-white/70 text-[11px] tracking-[0.15em] mt-0.5">YOUR AI MARKETING AGENT</div>
-              </div>
-            </div>
-          </div>
+        <div class="lg:col-span-5">
+          <img src="assets/aura-campaigns.png" alt="The Aura dashboard — one campaign live on Meta, one launching"
+               class="w-full max-w-[420px] mx-auto rounded-2xl shadow-2xl" loading="lazy" />
         </div>
       </div>
     </div>
@@ -470,7 +525,7 @@
         <input type="tel" name="phone" required placeholder="Phone Number *" autocomplete="tel" class="w-full bg-white text-[13px] text-gray-700 px-3.5 py-3 outline-none rounded-sm border border-black/10 placeholder:text-gray-400 focus:border-bordeaux" />
         <input type="text" name="businessName" required placeholder="Business Name *" autocomplete="organization" class="w-full bg-white text-[13px] text-gray-700 px-3.5 py-3 outline-none rounded-sm border border-black/10 placeholder:text-gray-400 focus:border-bordeaux" />
         <input type="text" name="businessState" required placeholder="Business State *" autocomplete="address-level1" class="w-full bg-white text-[13px] text-gray-700 px-3.5 py-3 outline-none rounded-sm border border-black/10 placeholder:text-gray-400 focus:border-bordeaux" />
-        <input type="text" name="website" required placeholder="Website or Social Media (or 'none') *" autocomplete="url" class="w-full bg-white text-[13px] text-gray-700 px-3.5 py-3 outline-none rounded-sm border border-black/10 placeholder:text-gray-400 focus:border-bordeaux" />
+        <input type="text" name="website" placeholder="Website or Social Media (optional)" class="w-full bg-white text-[13px] text-gray-700 px-3.5 py-3 outline-none rounded-sm border border-black/10 placeholder:text-gray-400 focus:border-bordeaux" />
 
         <div class="pt-2 flex items-start gap-2.5">
           <input type="checkbox" name="termsAccepted" value="Yes" required class="mt-1 accent-bordeaux shrink-0" />
@@ -562,7 +617,8 @@
             if (typeof gtag === "function") { gtag("event", "generate_lead", { form_name: "consultation" }); }
             if (typeof fbq === "function") { fbq("track", "Lead"); }
             form.reset();
-            submitBtn.textContent = "THANK YOU — WE WILL BE IN TOUCH";
+            submitBtn.textContent = "THANK YOU — REDIRECTING…";
+            setTimeout(function () { window.location.href = "thank-you.html"; }, 400);
           })
           .catch(function () {
             alert("Something went wrong. Please try again.");
